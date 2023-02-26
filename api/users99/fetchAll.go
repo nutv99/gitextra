@@ -28,7 +28,7 @@ type UpdateUser struct {
 }
 
 // FetchAll returns a list of Users.
-func FetchAll(w http.ResponseWriter, r *http.Request) {
+func FetchAll() {
 	const q = `
 			SELECT id, name, email, created_at, updated_at
 			FROM users
