@@ -1,4 +1,4 @@
-module myapp
+module myappextra
 
 go 1.18
 
