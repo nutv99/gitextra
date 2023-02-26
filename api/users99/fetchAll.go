@@ -36,3 +36,11 @@ func FetchAll(w http.ResponseWriter, r *http.Request) {
 		`
 
 }
+func FetchAll99(w http.ResponseWriter, r *http.Request) {
+	const q = `
+			SELECT id, name, email, created_at, updated_at
+			FROM users
+			ORDER BY created_at DESC;
+		`
+
+}
